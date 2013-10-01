@@ -12,6 +12,9 @@ class StaticPagesController < ApplicationController
   def java
   end
 
+  def rails
+  end
+
   def packman
     session[:return_to] = packman_path
   end

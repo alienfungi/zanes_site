@@ -12,6 +12,7 @@ private
     @header_links = {
       "Home" => root_path,
       "Java" => java_path,
+      "Rails" => rails_path,
       "Resume" => resume_path,
       "Contact" => contact_path
     }
