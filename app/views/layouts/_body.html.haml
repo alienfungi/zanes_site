@@ -1,0 +1,13 @@
+/ flash messages
+#flash_messages.container
+  = render 'layouts/flash'
+
+/ content
+= content_tag :div, yield, class: "container"
+
+%br
+%br
+
+/ debug info (development only)
+/ = content_tag(:div, debug(params), class: "container") if Rails.env.development?
+
