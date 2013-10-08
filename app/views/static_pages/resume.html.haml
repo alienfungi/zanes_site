@@ -2,7 +2,8 @@
 - content_for :header do
   %h1.pull-left
     Resume
-  = image_tag 'rails.png', class: 'pull-right'
+  = link_to rails_path do
+    = image_tag 'rails.png', class: 'pull-right'
   .clearfix
 
 #resume
