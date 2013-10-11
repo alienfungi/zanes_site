@@ -31,4 +31,14 @@ module ApplicationHelper
     end
   end
 
+  def header_links
+    {
+      "Home" => root_path,
+      "Java" => java_path,
+      "Ruby" => rails_path,
+      "Resume" => resume_path,
+      "Contact" => contact_path
+    }
+  end
+
 end
