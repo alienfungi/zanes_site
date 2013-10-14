@@ -8,9 +8,9 @@ gem 'haml-rails'
 gem 'whenever', require: false
 gem 'bcrypt-ruby', require: 'bcrypt'
 gem 'simple_form'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'debugger'
 end
 
@@ -37,7 +37,6 @@ gem 'bootstrap-will_paginate', :git => 'git://github.com/yrgoldteeth/bootstrap-w
 gem 'bootstrap-sass'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
