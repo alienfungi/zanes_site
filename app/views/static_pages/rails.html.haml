@@ -1,23 +1,80 @@
 - provide :title, "Ruby [on Rails]"
 
-.row
-  .col-sm-4
-    %a.btn.btn-primary.btn-lg.btn-block{href:"http://zanes-social-network.herokuapp.com"}
-      %span.glyphicon.glyphicon-user
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
       Social Network
-  .col-sm-4
-    %a.btn.btn-default.btn-lg.btn-block{href:"https://github.com/alienfungi/social_network"}
-      %span.glyphicon.glyphicon-cog
-      The Code
-
+  .panel-body
+    .row
+      .col-xs-12
+        %p
+          I learned Cucumber, Haml, and Ajax while coding this project.
+          Images are handled with Gravatar.
+          The sessions are managed manually with a modified version of a module I found online.
+          There is constant polling to add badges to the navigation bar when new messages arrive or you have new friend requests.
+          If you are on the home page, the polling also updates the activity feed and friends list.
+    .row
+      .col-sm-4
+        %a.btn.btn-primary.btn-lg.btn-block{href: "http://zanes-social-network.herokuapp.com"}
+          %span.glyphicon.glyphicon-user
+          Social Network
+      .col-sm-4
+        %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/social_network"}
+          %span.glyphicon.glyphicon-cog
+          The Code
 %br
-
-.row
-  .col-sm-4
-    %a.btn.btn-primary.btn-lg.btn-block{href:"http://zanes-dating-site.herokuapp.com"}
-      %span.glyphicon.glyphicon-heart
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
       Dating Site
-  .col-sm-4
-    %a.btn.btn-default.btn-lg.btn-block{href:"https://github.com/alienfungi/dating_site"}
-      %span.glyphicon.glyphicon-cog
-      The Code
+  .panel-body
+    .row
+      .col-xs-12
+        %p
+          I used devise for session management.
+          It has variable polling based on what page you are on to allow for real time chat on the show page for messages without unnecessarily bogging down the server on other pages.
+          I recently forked it to a private repository.
+          %br
+          (This site is still heavily under construction.)
+    .row
+      .col-sm-4
+        %a.btn.btn-primary.btn-lg.btn-block{href: "http://zanes-dating-site.herokuapp.com"}
+          %span.glyphicon.glyphicon-heart
+          Dating Site
+      .col-sm-4
+        %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/dating_site"}
+          %span.glyphicon.glyphicon-cog
+          Part of the Code
+%br
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      Kitchen Cloud
+  .panel-body
+    .row
+      .col-xs-12
+        %p
+          A project I am writing for a friend for One Spark in June.
+        %p
+          I'm also passively learning Rhodes for the project to make the mobile apps for the site in one Ruby codebase.
+    .row
+      .col-sm-4.col-sm-offset-4
+        %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/KitchenCloudDesktop"}
+          %span.glyphicon.glyphicon-cog
+          The Code
+%br
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      Potential Startup
+  .panel-body
+    .row
+      .col-xs-12
+        %p
+          This is currently just a framework of a website I have started for a potential startup with some friends.
+          The code is all in a private BitBucket repo, and the site itself doesn't look like much yet, but there is a hidden login page for company members to create and edit blog posts using tinymce for easy word-style formatting of the posts.
+    .row
+      .col-sm-4
+        %a.btn.btn-primary.btn-lg.btn-block{href: "http://company-site.herokuapp.com/"}
+          %span.glyphicon.glyphicon-floppy-disk
+          Start Up

@@ -1,14 +1,37 @@
 - provide :title, 'Java'
 
 #javaThumbs
+  .panel.panel-default
+    .panel-heading
+      %h3.panel-title
+        Final project for Computer Science 2
+    .panel-body
+      = link_to cars_path do
+        .thumb-container
+          %h1 Cars
+          = image_tag "cars_thumb.png"
+      %span
+        I posted this as an example of using the Swing library.
+        I code everything with scalability and reusability in mind, regardless of requirements.
+        The size of the cars and their speed changes logically with the size of the window when run in a JFrame.
+        Also, with the change of one constant you can have any number of cars and controls.
+        A control for this feature was left out of the final project because the only time I lost points in that class was for having features beyond specification.
 
-  = link_to packman_path do
-    .thumb-container
-      %h1 Packman
-      = image_tag "packman_thumb.png"
-
-  = link_to cars_path do
-    .thumb-container
-      %h1 Cars
-      = image_tag "cars_thumb.png"
-
+  .panel.panel-default
+    .panel-heading
+      %h3.panel-title
+        Final project for Artificial Intelligence
+    .panel-body
+      = link_to packman_path do
+        .thumb-container
+          %h1 Packman
+          = image_tag "packman_thumb.png"
+      %span
+        I coded this project in roughly two weeks time using a grid-based game framework I was building on the side to simulate many popular AI "games."
+        The framework was not built with fluid motion in mind, so that really posed the largest challenge.
+        %br
+        %br
+        The game itself now uses javascript to transmit high scores via ajax to a rails controller which stores them in a database.
+        The javascript system is insecure, but it was mostly a proof of concept.
+        The scores are displayed using datatables, an amazing jQuery plugin/ruby gem.
+        The datatables gem does not support bootstrap 3 yet, so I am using javascript on page load to fake some of the integration.
