@@ -1,3 +1,4 @@
+# Basic contact form model, used to send messages via e-mail to me
 class ContactMessage
   include ActiveModel::Model
 

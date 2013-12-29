@@ -1,3 +1,4 @@
+# Create, save, and display packman scores.
 class ScoresController < ApplicationController
   def new
   end
@@ -16,7 +17,7 @@ class ScoresController < ApplicationController
     redirect_to return_to unless return_to.empty?
   end
 
-private
+  private
 
   def score_params
     params.require(:score).permit(:name, :total)

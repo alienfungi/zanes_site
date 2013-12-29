@@ -1,3 +1,4 @@
+# Routes to all pages in site
 class StaticPagesController < ApplicationController
   def home
   end

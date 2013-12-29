@@ -16,6 +16,10 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :development do
+  gem 'annotate'
+end
+
 group :test do
   gem 'rspec'
   gem 'rspec-rails'

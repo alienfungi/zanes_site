@@ -1,3 +1,4 @@
+# Defines jquery behavior for the datatable housing packman scores
 class ScoresDatatable
   delegate :params, to: :@view
 
@@ -14,13 +15,13 @@ class ScoresDatatable
     }
   end
 
-private
+  private
 
   def data
     scores.map do |score|
       [
         score.total,
-        CGI::escapeHTML(score.name)
+        score.name
       ]
     end
   end
@@ -33,9 +34,10 @@ private
     scores = Score.order("#{sort_column} #{sort_direction}")
     scores = scores.page(page).per_page(per_page)
     if params[:sSearch].present?
-      scores = scores.where("name like :search", search: "%#{params[:sSearch]}%")
+      scores.where('name like :search', search: "%#{params[:sSearch]}%")
+    else
+      scores
     end
-    scores
   end
 
   def page
@@ -47,11 +49,11 @@ private
   end
 
   def sort_column
-    columns = %w[total name]
+    columns = %w(total name)
     columns[params[:iSortCol_0].to_i]
   end
 
   def sort_direction
-    params[:sSortDir_0] == "desc" ? "desc" : "asc"
+    params[:sSortDir_0] == 'desc' ? 'desc' : 'asc'
   end
 end
