@@ -3,6 +3,10 @@ MyPage::Application.routes.draw do
   resources :contact_messages, only: [:new, :create]
   resources :scores
 
+  # sessions
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
   root to: 'static_pages#home'
 
   match '/packman', to: 'static_pages#packman', via: [:get, :post]

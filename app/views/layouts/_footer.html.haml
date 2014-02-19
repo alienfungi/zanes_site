@@ -1,6 +1,21 @@
 #footer
   .container
     %br
-    %a#scroll_top{href: "javascript:window.scrollTo(0,0)"}
-      Top
-      %span.glyphicon.glyphicon-arrow-up>
+    .row
+      .col-sm-6
+        %a#scroll_top{href: "javascript:window.scrollTo(0,0)"}
+          Top
+          %span.glyphicon.glyphicon-arrow-up>
+      .col-sm-6
+        - if signed_in?
+          %a#logout.pull-right{href: '/logout'} logout
+        - else
+          %a#login.pull-right{href: '#', data: {toggle: 'modal', target: '#login_modal'}} login
+
+#login_modal.modal.fade{tabindex: '-1', role: 'dialog', aria: {hidden: true}}
+  .modal-dialog
+    .modal-content
+      .modal-body
+        %button.close{type: 'button', :'data-dismiss' => 'modal', :'aria-hidden' => true} &times;
+        %br
+        = render 'sessions/new'

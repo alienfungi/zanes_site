@@ -1,23 +1,24 @@
 source 'https://rubygems.org'
 ruby "2.0.0"
 
+gem 'rb-readline', require: false
 gem 'rails', '4.0.0'
 gem 'mail'
 gem 'haml'
 gem 'haml-rails'
 gem 'whenever', require: false
-gem 'bcrypt-ruby', require: 'bcrypt'
+gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'simple_form'
 gem 'pg'
-gem 'rb-readline', '~> 0.4.2'
 
 group :development, :test do
-  gem 'debugger'
   gem 'pry-rails'
 end
 
 group :development do
+  gem 'debugger'
   gem 'annotate'
+  gem 'bullet'
 end
 
 group :test do
@@ -46,4 +47,3 @@ group :production do
   gem 'rails_12factor'
   gem 'newrelic_rpm'
 end
-
