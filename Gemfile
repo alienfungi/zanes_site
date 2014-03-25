@@ -32,7 +32,7 @@ group :test do
   gem 'capybara'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '~> 4.0.2'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 

@@ -15,7 +15,7 @@ jQuery ->
   # on init
   packmanResize()
 
-  validate_field = (field, expression = //) ->
+  validate_field = (field, expression = new RegExp('')) ->
     parent = field.parent()
     parent.removeClass "has-error"
     parent.removeClass "has-warning"
