@@ -36,7 +36,7 @@ module ApplicationHelper
     {
       'Home' => root_path,
       'Ruby' => rails_path,
-      'Java' => java_path,
+      'Packman' => packman_path,
       'Resume' => resume_path,
       'Contact' => contact_path
     }

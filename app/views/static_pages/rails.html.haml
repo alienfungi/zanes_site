@@ -8,25 +8,14 @@
     .row
       .col-xs-12
         %p
-          The idea behind this project is to allow the gallery owner to fully edit all the content of their sites with ease.
-          A secondary objective of the site, is to make it mobile friendly.
-          The
-          = link_to 'old sites', 'http://www.tropicart.com'
-          are not.
-          This one site will serve as two using a location model along with a many to many relationship between artists to serve gallery specific content.
-          The contact form stores all messages to the database, so the gallery owner can easily review messages that could otherwise be lost in a sea of email.
-          After the mechanics of the site are done, all effort will be moved into making the site look on par with other sites of it's type.
-          %br
-          (This site is still heavily under construction and has been forked to a private repo.)
+          The idea behind this project is to make a mobile friendly application that can function as multiple distinct web sites that share one database.
+          Additionally, the gallery owner must be able to easily update all content of his/her site by logging in.
+          Nearly all content of the site is editable in place when logged in.
     .row
       .col-sm-4
         %a.btn.btn-primary.btn-lg.btn-block{href: "http://gallery-site.herokuapp.com"}
           %span.glyphicon.glyphicon-picture
           Gallery Site
-      .col-sm-4
-        %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/gallery_site"}
-          %span.glyphicon.glyphicon-cog
-          Some Code
 
 .panel.panel-default
   .panel-heading
@@ -36,10 +25,10 @@
     .row
       .col-xs-12
         %p
-          I used devise for session management.
-          It has variable polling based on what page you are on to allow for real time chat on the show page for messages without unnecessarily bogging down the server on other pages.
-          %br
-          (This site is still heavily under construction and has been forked to a private repo.)
+          This site will likely never be any variant of finished, just something to tinker with.
+          Frequent polling is used when on message pages to allow for real-time conversation.
+          Multiple user images may be uploaded directly through the interface and stored to Amazon S3.
+          Devise is handling session management.
     .row
       .col-sm-4
         %a.btn.btn-primary.btn-lg.btn-block{href: "http://zanes-dating-site.herokuapp.com"}
@@ -48,7 +37,7 @@
       .col-sm-4
         %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/dating_site"}
           %span.glyphicon.glyphicon-cog
-          Some Code
+          Code
 
 .panel.panel-default
   .panel-heading
@@ -71,5 +60,5 @@
       .col-sm-4
         %a.btn.btn-default.btn-lg.btn-block{href: "https://github.com/alienfungi/social_network"}
           %span.glyphicon.glyphicon-cog
-          All Code
+          Code
 

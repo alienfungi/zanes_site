@@ -2,12 +2,49 @@
 .jumbotron
   %h1 Welcome!!1
   %p{class: "lead"}
-    This is the site of Zane Woodfin a Ruby on Rails developer based out of Jacksonville Beach, FL.  It was written with
-    %a{href: "http://rubyonrails.org/"} Ruby on Rails 4
-    and
-    %a{href: "http://getbootstrap.com/"} Twitter Bootstrap 3
-    and is hosted on
-    %a{href: "https://github.com/alienfungi"} Github
-    and
-    %a{href: "https://www.heroku.com/about"} Heroku
-    %span> .
+    I'm a web application developer residing in Jacksonville Beach, FL, USA, Earth.
+    I enjoy sushi, rollerblading, and long walks on the floor to the kitchen and back.
+    The code for this site is
+    = succeed '.' do
+      %a{href: "https://github.com/alienfungi/zanes_site"} here
+.row
+  .col-md-8.col-xs-12
+    = image_tag 'link.jpg', class: 'img-responsive', title: "This is Link. He's clearly very busy saving princess Zelda from Ganon."
+  .col-md-4.col-xs-12
+    %h2 Cool Stuff
+    %ul
+      %li
+        %a{href: 'http://www.aardwolf.com'} Aardwolf Mud
+      %li
+        %a{href: 'https://www.codeschool.com/'} Code School
+      %li
+        Dvorak Keyboard Layout
+        %ul
+          %li
+            %a{href: 'http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard'} what is it
+          %li
+            %a{href: 'http://learn.dvorak.nl/'} learning it
+          %li
+            %a{href: 'http://www.kaufmann.no/roland/dvorak/'} programmer variant
+      %li
+        %a{href: 'http://johndiesattheend.com/'} John Dies at the End
+      %li
+        %a{href: 'http://www.kinesis-ergo.com/shop/advantage-pro-for-pc-mac/'} Kinesis Advantage
+      %li
+        %a{href: 'http://motherfuckingwebsite.com/'} Mother Fucking Website
+      %li
+        %a{href: 'http://www.ubuntu.com/'} Ubuntu
+      %li
+        %a{href: 'http://thezeitgeistmovement.com/'} Zeitgeist Movement
+    %h2 Links to Me
+    %ul
+      %li
+        %a{href: 'https://bitbucket.org/pzwoodfin'} Bitbucket
+      %li
+        %a{href: 'https://www.facebook.com/pzwoodfin'} Facebook
+      %li
+        %a{href: 'https://github.com/alienfungi'} GitHub
+      %li
+        %a{href: 'www.linkedin.com/in/zanewoodfin/'} LinkedIn
+      %li
+        %a{href: 'https://twitter.com/alienfungi'} Twitter
