@@ -6,45 +6,31 @@
     I enjoy sushi, rollerblading, and long walks on the floor to the kitchen and back.
     The code for this site is
     = succeed '.' do
-      %a{href: "https://github.com/alienfungi/zanes_site"} here
+      = link_to 'here', 'https://github.com/alienfungi/zanes_site'
 .row
   .col-md-8.col-xs-12
     = image_tag 'link.jpg', class: 'img-responsive', title: "This is Link. He's clearly very busy saving princess Zelda from Ganon."
   .col-md-4.col-xs-12
     %h2 Cool Stuff
     %ul
-      %li
-        %a{href: 'http://www.aardwolf.com'} Aardwolf Mud
-      %li
-        %a{href: 'https://www.codeschool.com/'} Code School
+      %li= link_to 'Aardwolf Mud', 'http://www.aardwolf.com'
+      %li= link_to 'Code School', 'https://www.codeschool.com/'
+      %li= link_to 'Colemak', 'http://colemak.com/'
       %li
         Dvorak Keyboard Layout
         %ul
-          %li
-            %a{href: 'http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard'} what is it
-          %li
-            %a{href: 'http://learn.dvorak.nl/'} learning it
-          %li
-            %a{href: 'http://www.kaufmann.no/roland/dvorak/'} programmer variant
-      %li
-        %a{href: 'http://johndiesattheend.com/'} John Dies at the End
-      %li
-        %a{href: 'http://www.kinesis-ergo.com/shop/advantage-pro-for-pc-mac/'} Kinesis Advantage
-      %li
-        %a{href: 'http://motherfuckingwebsite.com/'} Mother Fucking Website
-      %li
-        %a{href: 'http://www.ubuntu.com/'} Ubuntu
-      %li
-        %a{href: 'http://thezeitgeistmovement.com/'} Zeitgeist Movement
+          %li= link_to 'what is it', 'http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard'
+          %li= link_to 'learning it', 'http://learn.dvorak.nl/'
+          %li= link_to 'programmer variant', 'http://www.kaufmann.no/roland/dvorak/'
+      %li= link_to 'John Dies at the End', 'http://johndiesattheend.com/'
+      %li= link_to 'Kinesis Advantage', 'http://www.kinesis-ergo.com/shop/advantage-pro-for-pc-mac/'
+      %li= link_to 'Mother Fucking Website', 'http://motherfuckingwebsite.com/'
+      %li= link_to 'Ubuntu', 'http://www.ubuntu.com/'
+      %li= link_to 'Zeitgeist Movement', 'http://thezeitgeistmovement.com/'
     %h2 Links to Me
     %ul
-      %li
-        %a{href: 'https://bitbucket.org/pzwoodfin'} Bitbucket
-      %li
-        %a{href: 'https://www.facebook.com/pzwoodfin'} Facebook
-      %li
-        %a{href: 'https://github.com/alienfungi'} GitHub
-      %li
-        %a{href: 'https://www.linkedin.com/in/zanewoodfin/'} LinkedIn
-      %li
-        %a{href: 'https://twitter.com/alienfungi'} Twitter
+      %li= link_to 'Bitbucket', 'https://bitbucket.org/pzwoodfin'
+      %li= link_to 'Facebook', 'https://www.facebook.com/pzwoodfin'
+      %li= link_to 'GitHub', 'https://github.com/alienfungi'
+      %li= link_to 'LinkedIn', 'https://www.linkedin.com/in/zanewoodfin/'
+      %li= link_to 'Twitter', 'https://twitter.com/alienfungi'
