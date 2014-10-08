@@ -17,4 +17,5 @@
 //= require dataTables/jquery.dataTables.bootstrap3
 //= require dataTables/jquery.dataTables.api.fnReloadAjax
 //= require bootstrap.min
+//= require tinymce
 //= require_tree .

@@ -35,6 +35,7 @@ module ApplicationHelper
   def header_links
     {
       'Home' => root_path,
+      'Words' => posts_path,
       'Ruby' => rails_path,
       'Packman' => packman_path,
       'Resume' => resume_path,

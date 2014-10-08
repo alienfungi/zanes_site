@@ -10,6 +10,7 @@ gem 'whenever', require: false
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'simple_form'
 gem 'pg'
+gem 'tinymce-rails'
 
 group :development, :test do
   gem 'pry-rails'

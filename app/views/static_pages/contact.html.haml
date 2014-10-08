@@ -3,9 +3,6 @@
 .col-sm-8.col-sm-offset-2
   = simple_form_for @contact_message, html: { role: "form", onsubmit: "return validate_contact_message();" } do |f|
     = f.input :name, input_html: { autofocus: true }
-
     = f.input :email
-
     = f.input :message, as: :text, input_html: { rows: 7 }
-
     = f.submit "Submit", class: "btn btn-primary btn-block"

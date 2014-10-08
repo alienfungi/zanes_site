@@ -1,0 +1,8 @@
+- provide :title, 'Say Anything'
+
+= simple_form_for @post do |f|
+  = f.input :subject, input_html: { autofocus: true }
+  = f.input :body, input_html: { rows: 25, class: 'tinymce' }
+  = f.submit 'end...', class: 'btn btn-primary btn-block'
+
+= tinymce

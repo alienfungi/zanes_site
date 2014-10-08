@@ -2,6 +2,7 @@ MyPage::Application.routes.draw do
 
   resources :contact_messages, only: [:new, :create]
   resources :scores
+  resources :posts
 
   # sessions
   post '/login' => 'sessions#create'

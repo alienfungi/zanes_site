@@ -14,4 +14,8 @@ class ApplicationController < ActionController::Base
   def create_session_form_object
     @session_form = SessionForm.new
   end
+
+  def render_404
+    raise ActionController::RoutingError.new('F++')
+  end
 end

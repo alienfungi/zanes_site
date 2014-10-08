@@ -193,6 +193,8 @@ GEM
     thread_safe (0.3.1)
       atomic (>= 1.1.7, < 2)
     tilt (1.4.1)
+    tinymce-rails (4.0.28)
+      railties (>= 3.1.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -241,6 +243,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.2)
   simple_form
+  tinymce-rails
   uglifier (>= 1.0.3)
   whenever
   will_paginate

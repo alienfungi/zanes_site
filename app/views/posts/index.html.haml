@@ -1,0 +1,14 @@
+- provide :title, 'So it goes.'
+
+- if signed_in?
+  = link_to 'New', new_post_path, class: 'btn btn-primary'
+  %br
+  %br
+%table.table
+  - @posts.each do |post|
+    %tr
+      %td= link_to post.subject, post
+      %td.right.text-right
+        = link_to post_path(post), method: :delete do
+          %span.glyphicon.glyphicon-remove
+= will_paginate @posts
